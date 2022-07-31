@@ -22,8 +22,7 @@ window.requestAnimationFrame(game);
 
 function game(currentTime) {
     if (gameOver) {
-        if (confirm("You died. Restart by pressing 'OK'."))
-            window.location = '/';
+        window.location = '/Snake';
         return;
     }
     window.requestAnimationFrame(game);
@@ -52,8 +51,7 @@ function setSpeed() {
         case 'hard':
             snakeSpeed = 20;
             break;
-    }
-    return snakeSpeed;
+    } return snakeSpeed;
 }
 
 function update() {
